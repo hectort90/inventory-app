@@ -12,10 +12,8 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Inventario Sada
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -38,7 +36,6 @@
         />
       </q-list>
     </q-drawer>
-
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -104,3 +101,23 @@ function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 </script>
+
+<style scoped>
+.q-page {
+  background: #f5f5f5;
+}
+.q-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #2196f3; /* color primario */
+  color: white;
+}
+.q-toolbar-title {
+  flex: 1;
+  text-align: center;
+}
+.text-center {
+  flex: 1;
+}
+</style>
